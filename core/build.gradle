@@ -26,15 +26,15 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-    implementation depend.appcompat
-    implementation depend.core_ktx
+    api fileTree(dir: 'libs', include: ['*.jar'])
+    api"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    api depend.appcompat
+    api depend.core_ktx
     testImplementation depend.junit
     androidTestImplementation depend.ext_junit
     androidTestImplementation depend.espresso_core
-    implementation depend.constraintlayout
-    implementation depend.lifecycle_extensions
-    implementation depend.lifecycle_viewmodel_ktx
+    api depend.constraintlayout
+    api depend.lifecycle_extensions
+    api depend.lifecycle_viewmodel_ktx
 
 }
